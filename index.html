@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechShockHub.com</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <style>
+      body { background-color: #f5f7fa; }
+      header h1 { margin: 1rem 0; }
+      .featured img, .grid img { width: 100%; height: auto; border-radius: 8px; }
+      .sidebar { border-left: 1px solid #ccc; padding-left: 1rem; }
+      .news-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 2rem; }
+      .article-preview { margin-top: 1rem; }
+    </style>
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>TechShockHub.com</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#">AI</a></li>
+        <li><a href="#">Energy</a></li>
+        <li><a href="#">Robotics</a></li>
+        <li><a href="#" role="button">Subscribe</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <div class="news-grid">
+        <section class="featured">
+          <hgroup>
+            <h2>How Artificial Intelligence Is Transforming Daily Life</h2>
+            <h3>AI is making tools smarter, faster, and more useful for everyone</h3>
+          </hgroup>
+          <img src="https://via.placeholder.com/800x400?text=AI+Robot" alt="AI Robot with tablet" />
+          <p>Advances in AI tools are making technology more accessible and powerful for consumers. From personalized assistants to smart design tools, this revolution is unfolding fast.</p>
+        </section>
+
+        <aside class="sidebar">
+          <h3>Most Popular</h3>
+          <ul>
+            <li><a href="#">How Artificial Intelligence Is Transforming Daily Life</a></li>
+            <li><a href="#">Breakthroughs in EV Battery Technology</a></li>
+            <li><a href="#">Fusion Power Robots</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="grid">
+        <section class="article-preview">
+          <h3>Breakthroughs in EV Battery Technology</h3>
+          <img src="https://via.placeholder.com/400x200?text=EV+Battery" alt="EV Battery tech" />
+          <p>New batteries promise faster charging and longer range. Here's what you need to know about the innovations driving electric mobility forward.</p>
+        </section>
+
+        <section class="article-preview">
+          <h3>Next-Gen Home Robots</h3>
+          <img src="https://via.placeholder.com/400x200?text=Home+Robots" alt="Home Robots" />
+          <p>Robots are entering homes in new ways—from pet care to personal assistants. See what’s hitting the market now.</p>
+        </section>
+
+        <section class="article-preview">
+          <h3>Fusion Power Developments</h3>
+          <img src="https://via.placeholder.com/400x200?text=Fusion+Power" alt="Fusion Reactor" />
+          <p>The promise of near-limitless clean energy is closer than ever. Discover what breakthroughs are being made in fusion power plants.</p>
+        </section>
+
+        <section class="article-preview">
+          <h3>Revolutionary Green Tech Innovations</h3>
+          <img src="https://via.placeholder.com/400x200?text=Green+Tech" alt="Green Tech" />
+          <p>From biodegradable plastics to AI-powered solar panels, green technology is advancing at lightning speed.</p>
+        </section>
+      </div>
+    </main>
+
+    <section aria-label="Subscribe example">
+      <div class="container">
+        <article>
+          <hgroup>
+            <h2>Stay Updated</h2>
+            <h3>Sign up for the latest tech news and updates</h3>
+          </hgroup>
+          <form class="grid">
+            <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="First Name" required />
+            <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
+            <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <footer class="container">
+      <small>
+        <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+      </small>
+    </footer>
+  </body>
+</html>
+ 
